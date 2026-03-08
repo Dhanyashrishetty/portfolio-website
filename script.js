@@ -1,0 +1,26 @@
+// Welcome message button
+
+function showMessage(){
+
+    alert("Thank you for visiting my portfolio!");
+
+}
+
+
+// Smooth scrolling
+
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+
+    anchor.addEventListener("click", function(e){
+
+        e.preventDefault();
+
+        document.querySelector(this.getAttribute("href")).scrollIntoView({
+
+            behavior: "smooth"
+
+        });
+
+    });
+
+});
